@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dusk Bot Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">&lt;Dusk /&gt;</div>
+        <nav class="sidebar-nav">
+            <button class="nav-item active" data-page="overview">
+                <span>📊</span> overview
+            </button>
+            <button class="nav-item" data-page="commands">
+                <span>⚡</span> commands
+            </button>
+            <button class="nav-item" data-page="economy">
+                <span>💰</span> economy
+            </button>
+            <button class="nav-item" data-page="moderation">
+                <span>🛡️</span> moderation
+            </button>
+        </nav>
+        <div class="sidebar-status">
+            <div class="status-dot online"></div>
+            <span>Dusk-moderator online</span>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-left">
+                <h1 id="page-title">// overview</h1>
+                <p id="page-subtitle">bot performance at a glance</p>
+            </div>
+            <div class="header-right">
+                <div class="server-selector">
+                    <span>📡</span>
+                    <span id="server-name">Dusk Test Server</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <div class="content" id="content">
+            <!-- injected by JavaScript -->
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
